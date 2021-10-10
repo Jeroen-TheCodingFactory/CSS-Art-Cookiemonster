@@ -4,7 +4,7 @@ Cookiemonster nagemaakt in HTML en CSS. Op desktop is er een interactie gerealis
 <b>Alle rechten voorbehouden, alle rechten van cookiemonster behoren tot zijn/haar rechtmatige eigenaar.</b>
 
 ## Intro
-Cookiemonster ligt te slapen... Maar zodra er een koekkie in de buurt is wordt hij wakker!
+Cookiemonster ligt te slapen... Maar zodra er een koekje in de buurt is wordt hij wakker!
 Cookiemonster is nagemaakt in HTML en CSS voor de lol. Er zijn geen afbeeldingen of SVG's gebruikt. 
 
 ## Geleerde dingen
