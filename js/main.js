@@ -1,19 +1,20 @@
 const eyes = Array.from(document.getElementsByClassName("cookiemonster__innerEye"));
 const width = window.innerWidth;
 const height = window.innerHeight;
-const cookie = document.getElementById("js--cookie");
+const cookies = Array.from(document.getElementsByClassName("cookie"));
 let cookieIsDragged = false;
+let target;
 
 window.onmousemove = function(event){
 
     if(cookieIsDragged === false) return;
-    console.log(event);
-    cookie.style.top = event.clientY + "px";
-    cookie.style.left = event.clientX + "px"; 
+    
+    target.style.top = event.clientY + "px";
+    target.style.left = event.clientX + "px";
 
     let left = event.clientX / width * 90;
     let top = event.clientY / height * 90;
-
+ 
     if(left < 0) return;
     if(left > 90) return;
     if(top < 5) return;
@@ -25,7 +26,13 @@ window.onmousemove = function(event){
     });
 }  
 
-cookie.onclick = function(event){
-    cookieIsDragged = !cookieIsDragged;
-    console.log(cookieIsDragged);
-}
+cookies.forEach(function(cookie){
+    cookie.onclick = function(event){
+        cookieIsDragged = !cookieIsDragged;
+        if(event.target.classList.contains("cookie__spot")){
+            target = event.target.parentNode;
+            return;
+        }
+        target = event.target;
+    }
+});
