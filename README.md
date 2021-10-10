@@ -1,0 +1,23 @@
+# Cookiemonster 
+
+## Intro
+Cookiemonster ligt te slapen... Maar zodra er een koekkie in de buurt is wordt hij wakker!
+Cookiemonster is nagemaakt in HTML en CSS voor de lol. Er zijn geen afbeeldingen of SVG's gebruikt. 
+
+## Geleerde dingen
+Dingen die ik heb geleerd tijdens het project:
+1. Ik heb geleerd git reset --soft te gebruiken om zo de historie van commits te overschrijven met --force push.
+2. Hoe lastig het is om bepaalde vormen zonder SVG te maken, opgelost door zo goed mogelijk een speels karakter te creeëren. 
+3. Hoe inset met blur een 3D-effect in de ogen kan geven. 
+4. Dat een ::before en ::after op een element zitten en NIET op de class. Zo kan ik met cookiemonster__eye en cookiemonster__eye--left hetzelfde :before en :after element aanroepen.
+5. Geleerd om elke feature 1 commit te laten zijn op de online repository zodat het makkelijk terug te draaien is.
+Alle rechten voorbehouden, alle rechten van cookiemonster behoren tot zijn/haar rechtmatige eigenaar. 
+6. Hoe je je markdown file mooi kan indelen :D
+
+## Screenshots
+
+### Desktop Screenshot (met cookie)
+![Het gerealiseerde eindproduct op desktop: Cookiemonster in HTML en CSS met cookie](https://vettedingenbouwen.nl/img/cookiemonster.png "Cookiemonster")
+
+### Mobile Screenshot (zonder cookie)
+![Het gerealiseerde eindproduct op mobile: Cookiemonster in HTML en CSS](https://vettedingenbouwen.nl/img/cookiemonster_mobile.png "Cookiemonster")
