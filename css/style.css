@@ -54,7 +54,7 @@ main{
     left:0%;
     animation-name: wakeUp;
     animation-duration: 0.2s;
-    animation-delay:3s;
+    animation-delay:2.2s;
     animation-fill-mode: forwards;
     transform-origin: top;
 }
@@ -184,8 +184,31 @@ main{
     position: absolute;
     overflow: hidden;
     transform: translate(-50%,-50%);
-    bottom:50%;
-    right:20%;
+}
+
+.cookie--first{
+    bottom:10%;
+    right:10%;
+}
+
+.cookie--second{
+    bottom:10%;
+    left:20%;
+}
+
+.cookie--third{
+    top:15%;
+    right:10%;
+}
+
+.cookie--fourth{
+    top:20%;
+    left:10%;
+}
+
+.cookie--fifth{
+    bottom:0%;
+    left:50%;
 }
 
 .cookie:hover{
