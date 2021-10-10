@@ -16,6 +16,7 @@ Dingen die ik heb geleerd tijdens het project:
 5. Geleerd om elke feature 1 commit te laten zijn op de online repository zodat het makkelijk terug te draaien is.
 6. Hoe je je markdown file mooi kan indelen :D
 7. Geleerd hoe hotfix-branches gemaakt moeten worden. Geleerd dat deze public moeten zijn en gemerged moeten worden in de master. 
+8. Geleerd hoe pull requests werken en hoe je bepaalde regels voor een branch insteld in github.
 
 ## Screenshots
 
