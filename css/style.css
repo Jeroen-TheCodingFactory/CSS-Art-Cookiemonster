@@ -5,7 +5,26 @@
 }
 
 :root{
+    /* colors cookiemonster*/
     --cookie-monster-blue: #0f98dc;
+    --cookie-monster-black: #000;
+    --cookie-monster-white: #fff;
+    /* colors cookie */
+    --cookie-black: #000;
+    --cookie-default-background: #ebbd5b;
+    --cookie-spot-color: #000;
+    --cookie-chocolate-color: #402218;
+    --cookie-red-color: #AA2B1D;
+    --cookie-spot-chocolate-color: #865439;
+    --cookie-spot-red-color: #DA723C;
+    /* transforms */
+    --original-scale: scale(0.6);
+    --mobile-scale: scale(0.35);
+    --mouth-circle-rotation: rotate(10deg);
+    /* positions */
+    --mouth-circle-left-position: 16%;
+    /* shadows */
+    --eye-shadow-inner: inset 0 0 4rem 0 rgba(0,0,0,0.4);
 }
 html{
     font-size:62.5%;
@@ -21,11 +40,10 @@ main{
 }
 
 .cookiemonster{
-    background:var(--cookie-monster-blue);
     min-width:100rem;
     height:100rem;
     position:relative;
-    transform:scale(0.6);
+    transform:var(--original-scale);
     background:var(--cookie-monster-blue);
 }
 
@@ -34,16 +52,17 @@ main{
     width:30rem;
     position:absolute;
     top:30%;
-    background:black;
+    background:var(--cookie-monster-black);
     border-radius:50%;
     transform: translate(-50%,-50%);
-    background:white;
-    border:0.7rem solid black;
+    background:var(--cookie-monster-white);
+    border:0.7rem solid var(--cookie-monster-black);
     z-index:1;
-    box-shadow: inset 0 0 4rem 0 rgba(0,0,0,0.4);
+    box-shadow: var(--eye-shadow-inner);
     overflow: hidden;
 }
 
+/*eyelid*/
 .cookiemonster__eye::after{
     content:"";
     height:100%;
@@ -52,6 +71,7 @@ main{
     position:absolute;
     top:0%;
     left:0%;
+    /* animation */
     animation-name: wakeUp;
     animation-duration: 0.2s;
     animation-delay:2.2s;
@@ -70,7 +90,7 @@ main{
 .cookiemonster__innerEye{
     position:absolute;
     transform:translate(-50%,-50%);
-    background:black;
+    background:var(--cookie-monster-black);
     width:40%;
     height:40%;
     border-radius:50%;
@@ -93,7 +113,7 @@ main{
     transform: translate(-50%,-50%);
     width:60rem;
     height:60rem;
-    background:black;
+    background:var(--cookie-monster-black);
     border-radius: 50%;
     -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
@@ -105,29 +125,29 @@ main{
     width: 20rem;
     background: var(--cookie-monster-blue);
     top:30%;
-    left:16%;
+    left:var(--mouth-circle-left-position);
     border-radius: 50%;
-    transform: rotate(10deg)
+    transform: var(--mouth-circle-rotation);
 }
 
 .cookiemonster__mouthCircle--second{
-    left:calc(16% + 10rem);
+    left:calc(var(--mouth-circle-left-position) + 10rem);
 }
 
 .cookiemonster__mouthCircle--third{
-    left:calc(16% + 20rem);
+    left:calc(var(--mouth-circle-left-position) + 20rem);
 }
 
 .cookiemonster__mouthCircle--fourth{
-    left:calc(16% + 30rem);
+    left:calc(var(--mouth-circle-left-position) + 30rem);
 }
 
 .cookiemonster__mouthCircle--fifth{
-    left:calc(16% + 40rem);
+    left:calc(var(--mouth-circle-left-position) + 40rem);
 }
 
 .cookiemonster__mouthCircle--sixth{
-    left:calc(16% + 50rem);
+    left:calc(var(--mouth-circle-left-position) + 50rem);
 }
 
 .cookiemonster__mouthEnd{
@@ -136,7 +156,7 @@ main{
     width:25rem;
     border: 1rem solid transparent;
     border-radius: 50%;
-    border-bottom: 1rem solid black;
+    border-bottom: 1rem solid var(--cookie-monster-black);
     top:36%;
     z-index: 1;
 }
@@ -153,7 +173,7 @@ main{
     border-radius:50%;
     position: absolute;
     border: 1rem solid transparent;
-    border-bottom: 1rem solid black;
+    border-bottom: 1rem solid var(--cookie-monster-black);
     transform:rotate(125deg);
     top:70%;
 }
@@ -165,11 +185,12 @@ main{
     border-radius:50%;
     position: absolute;
     border: 1rem solid transparent;
-    border-bottom: 1rem solid black;
+    border-bottom: 1rem solid var(--cookie-monster-black);
     bottom:-29%;
     left:30%;
     transform:rotate(-125deg);
 }
+
 .cookiemonster__mouthEnd--right{
     right:10%;  
     transform: rotate(-35deg);
@@ -178,12 +199,21 @@ main{
 .cookie{
     height:20rem;
     width:20rem;
-    background:#ebbd5b;
+    background: var(--cookie-default-background);
     border-radius:50%;
-    border:0.5rem solid black;
+    border:0.5rem solid var(--cookie-black);
     position: absolute;
     overflow: hidden;
     transform: translate(-50%,-50%);
+}
+
+.cookie--chocolate{
+    background: var(--cookie-chocolate-color);
+    border-radius: 45%;
+}
+
+.cookie--red{
+    background: var(--cookie-red-color);
 }
 
 .cookie--first{
@@ -220,9 +250,20 @@ main{
     width:20%;
     height:20%;
     border-radius: 50%;
-    background: black;
+    background: var(--cookie-spot-color);
 }
 
+.cookie--chocolate > .cookie__spot{
+    background:var(--cookie-spot-chocolate-color);
+    border-radius: 0.5rem;
+}
+
+.cookie--red > .cookie__spot{
+    background: var(--cookie-spot-red-color);
+    border-radius: 0%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
 .cookie__spot--first{
     top:25%;
     left:20%;
@@ -241,8 +282,13 @@ main{
     bottom:10%;
     right:5%;
 }
-/* Utility classes */
 
+.cookie--red > .cookie__spot--fourth{
+    bottom:15%;
+    right: 15%;
+}
+
+/* Utility classes */
 .u-no-overflow{
     overflow:hidden;
 }
@@ -254,6 +300,7 @@ main{
     flex-shrink: 0;
 }
 
+/* Media queries , 75 rem === 1200px */
 @media screen and (max-width: 75rem){
     .cookie{
         display:none;
@@ -263,7 +310,7 @@ main{
         position:absolute;
         top:50%;
         left:50%;
-        transform: translate(-50%,-50%) scale(0.35);
+        transform: translate(-50%,-50%) var(--mobile-scale);
     }
 
     .cookiemonster__eye::after{
@@ -271,6 +318,7 @@ main{
     }
 }
 
+/* Animation classes */
 .a-popup{
     animation-name: a-popup;
     animation-duration: 0.2s;
@@ -278,7 +326,7 @@ main{
     animation-fill-mode: backwards;
 }
 
-
+/* Keyframes */
 @keyframes a-popup {
     from{
         opacity:0;
