@@ -1,5 +1,7 @@
 # Cookiemonster
 [![Het gerealiseerde eindproduct op desktop](https://vettedingenbouwen.nl/img/cookiemonster.png)](https://vettedingenbouwen.nl/video/cookiemonster/promo.mp4) 
+<i>Klik op de video hierboven voor een demo!</i>
+
 Cookiemonster nagemaakt in HTML en CSS. Op desktop is er een interactie gerealiseerd met een koekje in Javascript. Voor de lol gedaan zonder enig winstoogmerk. 
 
 <b>Alle rechten voorbehouden, alle rechten van cookiemonster behoren tot zijn/haar rechtmatige eigenaar.</b>
