@@ -19,7 +19,7 @@
     --cookie-spot-red-color: #DA723C;
     /* transforms */
     --original-scale: scale(0.6);
-    --mobile-scale: scale(0.35);
+    --mobile-scale: scale(0.3);
     --mouth-circle-rotation: rotate(10deg);
     /* positions */
     --mouth-circle-left-position: 16%;
