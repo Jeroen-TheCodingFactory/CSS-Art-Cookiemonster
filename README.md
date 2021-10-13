@@ -7,20 +7,21 @@ Cookiemonster nagemaakt in HTML en CSS. Op desktop is er een interactie gerealis
 <b>Alle rechten voorbehouden, alle rechten van cookiemonster behoren tot zijn/haar rechtmatige eigenaar.</b>
 
 ## Intro
-Cookiemonster ligt te slapen... Maar zodra er een koekje in de buurt is wordt hij wakker!
-Cookiemonster is nagemaakt in HTML en CSS voor de lol. Er zijn geen afbeeldingen of SVG's gebruikt. 
+Cookiemonster ligt te slapen... Maar zodra er een koekjes in de buurt zijn wordt hij wakker!
+Cookiemonster is nagemaakt in HTML en CSS. Er zijn geen afbeeldingen of SVG's gebruikt. Ook de cookies zijn geheel in HTML en CSS gerealiseerd.
 
-## Geleerde dingen
-Dingen die ik heb geleerd tijdens het project:
-1. Ik heb geleerd git reset --soft te gebruiken om zo de historie van commits te overschrijven met --force push.
-2. Hoe lastig het is om bepaalde vormen zonder SVG te maken, opgelost door zo goed mogelijk een speels karakter te creeëren. 
-3. Hoe inset met blur een 3D-effect in de ogen kan geven. 
-4. Dat een ::before en ::after op een element zitten en NIET op de class. Zo kan ik met cookiemonster__eye en cookiemonster__eye--left hetzelfde :before en :after element aanroepen.
-5. Geleerd om elke feature 1 commit te laten zijn op de online repository zodat het makkelijk terug te draaien is.
-6. Hoe je je markdown file mooi kan indelen :D
-7. Geleerd hoe hotfix-branches gemaakt moeten worden. Geleerd dat deze public moeten zijn en gemerged moeten worden in de master. 
-8. Geleerd hoe pull requests werken en hoe je bepaalde regels voor een branch insteld in github.
-9. Geleerd hoe tags, releases en semantic versioning werken.
+## Dingen die ik heb geleerd
+1. Hoe lastig het is om bepaalde vormen zonder SVG te maken, opgelost door zo goed mogelijk een speels karakter te creeëren zodat niet alles te "statich" is.
+2. Hoe inset met blur een 3D-effect in de ogen kan geven. 
+3. Dat een ::before en ::after op een element zitten en NIET op de class. Zo kan ik met cookiemonster__eye en cookiemonster__eye--left hetzelfde :before en :after psuedo-element aanroepen.
+4. Hoe je je markdown file mooi kan indelen :D
+5. Ik heb veel over Github geleerd. Zoals het gebruiken van git reset --soft om zo de historie van commits te overschrijven. "Geschiedvervalsing" vind ik een mooie term hiervoor.
+6. Als je de techniek van 5. toepast is het belangrijk dit <b>alleen</b> lokaal te gebruiken. Doe je dit online (wat ik helaas ook heb gedaan) dan <i>breek</i> je links in de Github omgeving. Hierdoor zijn bepaalde branches gemaakt op bepaalde issues, merge requests of features lastig te vinden. Ook kan je git rebase hiervoor gebruiken.
+7. Geleerd om elke feature in een feature-branch 1 commit te laten zijn op de online repository zodat het makkelijk terug te draaien is. Lokaal kan je meer commits hebben maar dan kan je de techniek uit 5. gebruiken. 
+8. Geleerd hoe hotfix-branches gemaakt moeten worden. Geleerd dat deze public moeten zijn en gemerged moeten worden in de master. 
+9. Geleerd hoe pull requests werken en hoe je bepaalde regels voor een branch insteld in github. 
+10. Geleerd hoe tags, releases en semantic versioning werken.
+11. Geleerd hoe je bepaalde elementen kan "oppakken" in Javascript door een mousemove event en weer "neer kan zetten". Het oppakken wordt gedaan door een onclick op een koekje, vervolgens volgt dit koekje de muis (en staat het koekje in het midden door een translate). Wanneer je weer op het koekje klikt stopt dat betreffende koekje met volgen.
 
 ## Screenshots
 
@@ -29,3 +30,6 @@ Dingen die ik heb geleerd tijdens het project:
 
 ### Mobile Screenshot (zonder cookie)
 ![Het gerealiseerde eindproduct op mobile: Cookiemonster in HTML en CSS](https://vettedingenbouwen.nl/img/cookiemonster_mobile.png "Cookiemonster")
+
+## Live demo
+https://vettedingenbouwen.nl/cookiemonster 
