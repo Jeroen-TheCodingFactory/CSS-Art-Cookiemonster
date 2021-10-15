@@ -40,14 +40,15 @@ function onSnackTime(){
  * @param {*} event - default JS event property that is needed to read me data from
  * @returns void
  */
-mouth.onmouseenter = function(event){
-    if(!event.relatedTarget.classList.contains("cookie") && cookieIsDragged === false) return;
+mouth.onmouseover = function(event){
+    if(event.releatedTarget !== null && event.relatedTarget.classList.contains("cookie") && cookieIsDragged === false){
         mouth.classList.toggle("a-eat");
         event.relatedTarget.classList.add("cookie--eaten--1");
         music.play();   
         setTimeout(function(){
             mouth.classList.toggle("a-eat");
         },animationTime);
+    }
 }
 
 /**
