@@ -120,6 +120,25 @@ main{
     clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
 }
 
+.a-eat{
+    animation-name: eat;
+    animation-duration:0.4s;
+    animation-fill-mode: ease;
+    animation-iteration-count: 4;
+    transform-origin: top center;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+@keyframes eat {
+    from{
+        transform: translate(-50%,-50%) scaleY(0.2);
+    }
+    to{
+        transform: translate(-50%,-50%) scaleY(1);
+    } 
+}
+
 .cookiemonster__mouthCircle{
     position: absolute;
     height: 30rem;

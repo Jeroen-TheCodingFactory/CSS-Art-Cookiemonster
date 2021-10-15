@@ -21,11 +21,15 @@ function onSnackTime(){
 }
 
 mouth.onmouseenter = function(event){
-    let randomNumber = Math.floor(Math.random() * 4);
+    let randomNumber = Math.floor(Math.random() * 2);
     if(event.relatedTarget.classList.contains("cookie")){
         event.relatedTarget.classList.add("cookie--eaten--" + event.relatedTarget.dataset.cookie);
         event.relatedTarget.dataset.cookie = parseInt(event.relatedTarget.dataset.cookie) + 1;   
     }
+    mouth.classList.toggle("a-eat");
+    setTimeout(function(){
+        mouth.classList.toggle("a-eat");
+    },1600)
     music[randomNumber].play();
 }
 window.onmousemove = function(event){
