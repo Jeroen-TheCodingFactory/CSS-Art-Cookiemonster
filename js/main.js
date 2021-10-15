@@ -6,6 +6,7 @@ let cookieIsDragged = false;
 let target;
 const mouth = document.getElementById("js--mouth");
 
+
 /* music from HTML */
 const snackTime = document.getElementById("js--snackTime");
 const music = Array.from(document.getElementsByClassName("music"));
@@ -21,17 +22,17 @@ function onSnackTime(){
 }
 
 mouth.onmouseenter = function(event){
-    let randomNumber = Math.floor(Math.random() * 2);
-    if(event.relatedTarget.classList.contains("cookie")){
+    let randomNumber = 1;
+    if(!event.relatedTarget.classList.contains("cookie") && cookieIsDragged === false) return;
         event.relatedTarget.classList.add("cookie--eaten--" + event.relatedTarget.dataset.cookie);
         event.relatedTarget.dataset.cookie = parseInt(event.relatedTarget.dataset.cookie) + 1;   
-    }
-    mouth.classList.toggle("a-eat");
-    setTimeout(function(){
         mouth.classList.toggle("a-eat");
-    },1600)
-    music[randomNumber].play();
+        setTimeout(function(){
+            mouth.classList.toggle("a-eat");
+        },1600);
+        music[randomNumber].play();
 }
+
 window.onmousemove = function(event){
     if(cookieIsDragged === false) return;
     
