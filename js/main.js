@@ -7,7 +7,8 @@ let target;
 const mouth = document.getElementById("js--mouth");
 
 /* music from HTML */
-const snackTime = document.getElementById("js--snack-time");
+const snackTime = document.getElementById("js--snackTime");
+const music = Array.from(document.getElementsByClassName("music"));
 
 function onSnackTime(){
     let isPlayed = false;
@@ -20,11 +21,12 @@ function onSnackTime(){
 }
 
 mouth.onmouseenter = function(event){
+    let randomNumber = Math.floor(Math.random() * 4);
     if(event.relatedTarget.classList.contains("cookie")){
         event.relatedTarget.classList.add("cookie--eaten--" + event.relatedTarget.dataset.cookie);
-        event.relatedTarget.dataset.cookie = parseInt(event.relatedTarget.dataset.cookie) + 1;
-        document.title = "NOM NOM NOM!";
+        event.relatedTarget.dataset.cookie = parseInt(event.relatedTarget.dataset.cookie) + 1;   
     }
+    music[randomNumber].play();
 }
 window.onmousemove = function(event){
     if(cookieIsDragged === false) return;
