@@ -291,7 +291,7 @@ main{
 
 /* eaten stages */
 .cookie--eaten--1{
-    transform: translate(-50%,-50%) scale(0.5);
+    transform: translate(-50%,-50%) scale(0.8);
 }
 
 .cookie--eaten--2{

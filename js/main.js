@@ -6,11 +6,24 @@ let cookieIsDragged = false;
 let target;
 const mouth = document.getElementById("js--mouth");
 
+/* music */
+const snackTime = document.getElementById("js--snack-time");
+
+function onSnackTime(){
+    let isPlayed = false;
+    return function playSnackTime(){
+        if(isPlayed === false){
+            snackTime.play();
+            isPlayed = true;
+        }
+    };
+}
+
 mouth.onmouseenter = function(event){
     if(event.relatedTarget.classList.contains("cookie")){
         event.relatedTarget.classList.add("cookie--eaten--" + event.relatedTarget.dataset.cookie);
         event.relatedTarget.dataset.cookie = parseInt(event.relatedTarget.dataset.cookie) + 1;
-        console.log(event.relatedTarget);
+        document.title = "NOM NOM NOM!";
     }
 }
 window.onmousemove = function(event){
@@ -34,8 +47,10 @@ window.onmousemove = function(event){
     });
 }  
 
+let checkSnackTime = onSnackTime();
 cookies.forEach(function(cookie){
-    cookie.onclick = function(event){
+    cookie.onclick = function(event){ 
+        checkSnackTime();   
         cookieIsDragged = !cookieIsDragged;
         if(event.target.classList.contains("cookie__spot")){
             target = event.target.parentNode;
