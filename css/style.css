@@ -289,6 +289,19 @@ main{
     right: 15%;
 }
 
+/* eaten stages */
+.cookie--eaten--first{
+    transform: translate(-50%,-50%) scale(0.85);
+}
+
+.cookie--eaten--second{
+    transform: translate(-50%,-50%) scale(0.7);
+}
+
+.cookie--eaten--third{
+    transform: translate(-50%,-50%) scale(0.5);
+}
+
 /* Utility classes */
 .u-no-overflow{
     overflow:hidden;
