@@ -41,3 +41,9 @@ Cookiemonster is nagemaakt in HTML en CSS. Er zijn geen afbeeldingen of SVG's ge
 
 ## Live demo
 https://vettedingenbouwen.nl/cookiemonster 
+
+## Resources
+1. Audio gebruikt voor "Snack Time" en het eten van cookies. https://www.youtube.com/watch?v=mQE0LQFFn3s
+2. JSDoc documentatie gebruikt voor het leren van JSDoc. https://jsdoc.app/about-getting-started.html
+3. Artikel gebruikt voor het onderzoek naar attributen van het Audio-element. https://www.w3schools.com/jsref/dom_obj_audio.asp
+4. Artikel over MouseEvent.relatedTarget. https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/relatedTarget
