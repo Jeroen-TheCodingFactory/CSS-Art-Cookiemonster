@@ -4,7 +4,15 @@ const height = window.innerHeight;
 const cookies = Array.from(document.getElementsByClassName("cookie"));
 let cookieIsDragged = false;
 let target;
+const mouth = document.getElementById("js--mouth");
 
+mouth.onmouseenter = function(event){
+    if(event.relatedTarget.classList.contains("cookie")){
+        event.relatedTarget.classList.add("cookie--eaten--" + event.relatedTarget.dataset.cookie);
+        event.relatedTarget.dataset.cookie = parseInt(event.relatedTarget.dataset.cookie) + 1;
+        console.log(event.relatedTarget);
+    }
+}
 window.onmousemove = function(event){
 
     if(cookieIsDragged === false) return;

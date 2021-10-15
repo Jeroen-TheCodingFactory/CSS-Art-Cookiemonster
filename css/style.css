@@ -290,16 +290,12 @@ main{
 }
 
 /* eaten stages */
-.cookie--eaten--first{
-    transform: translate(-50%,-50%) scale(0.85);
-}
-
-.cookie--eaten--second{
-    transform: translate(-50%,-50%) scale(0.7);
-}
-
-.cookie--eaten--third{
+.cookie--eaten--1{
     transform: translate(-50%,-50%) scale(0.5);
+}
+
+.cookie--eaten--2{
+    transform: translate(-50%,-50%) scale(0);
 }
 
 /* Utility classes */
