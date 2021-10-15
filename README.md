@@ -2,7 +2,7 @@
 [![Het gerealiseerde eindproduct op desktop](https://vettedingenbouwen.nl/img/cookiemonster.png)](https://vettedingenbouwen.nl/video/cookiemonster/promo.mp4) 
 <i>Klik op de video hierboven voor een demo!</i>
 
-Cookiemonster nagemaakt in HTML en CSS. Op desktop is er een interactie gerealiseerd met een koekje in Javascript. Voor de lol gedaan zonder enig winstoogmerk. 
+Cookiemonster nagemaakt in HTML en CSS. Op desktop is er een interactie gerealiseerd met een koekje in Javascript en kan je Cookiemonster voeren. Dit kan door een cookie in Cookiemonster zijn mond te plaatsen en vervolgens vanuit het cookie op de mond te hoveren. Voor de lol gedaan zonder enig winstoogmerk. 
 
 <b>Alle rechten voorbehouden, alle rechten van cookiemonster behoren tot zijn/haar rechtmatige eigenaar.</b>
 
@@ -22,6 +22,14 @@ Cookiemonster is nagemaakt in HTML en CSS. Er zijn geen afbeeldingen of SVG's ge
 9. Geleerd hoe pull requests werken en hoe je bepaalde regels voor een branch insteld in github. 
 10. Geleerd hoe tags, releases en semantic versioning werken.
 11. Geleerd hoe je bepaalde elementen kan "oppakken" in Javascript door een mousemove event en weer "neer kan zetten". Het oppakken wordt gedaan door een onclick op een koekje, vervolgens volgt dit koekje de muis (en staat het koekje in het midden door een translate). Wanneer je weer op het koekje klikt stopt dat betreffende koekje met volgen.
+12. Geleerd hoe je een "eet" animatie na kan maken door een scaleY met transform origin op de mond. 
+13. Geleerd dat verschillende < audio> tags door elkaar kunnen spelen.
+14. In tegenstelling tot verschillende < audio> tags kan één < audio> tag maar één tegelijk afspelen.
+15. Ik heb geleerd een closure te maken om zo te checken of een < audio> element al afgespeeld is. 
+16. Geleerd hoe snel code rommelig kan worden in Javascript. Comments zijn hier key(zie ook punt 18).
+17. Geleerd dat een event een relatedTarget property heeft. Je kan hier checken van welk element het event gevuurd wordt bij een onmouseenter of onmouseleave. 
+18. Geleerd om JSDoc te gebruiken voor een handige documentatie van functies en variabelen.
+19. Al het bovenstaande gecombineerd om een hele gave eet-animatie met muziek te maken! Heeeeeeel gaaf :)
 
 ## Screenshots
 

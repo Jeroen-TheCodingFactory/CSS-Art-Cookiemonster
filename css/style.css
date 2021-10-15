@@ -75,7 +75,7 @@ main{
     /* animation */
     animation-name: wakeUp;
     animation-duration: 0.2s;
-    animation-delay:2.2s;
+    animation-delay:1s;
     animation-fill-mode: forwards;
     transform-origin: top;
 }
@@ -124,7 +124,7 @@ main{
     animation-name: eat;
     animation-duration:0.4s;
     animation-fill-mode: ease;
-    animation-iteration-count: 4;
+    animation-iteration-count: 3;
     transform-origin: top center;
     animation-direction: alternate;
     animation-fill-mode: backwards;
