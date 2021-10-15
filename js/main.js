@@ -6,7 +6,7 @@ let cookieIsDragged = false;
 let target;
 const mouth = document.getElementById("js--mouth");
 
-/* music */
+/* music from HTML */
 const snackTime = document.getElementById("js--snack-time");
 
 function onSnackTime(){
@@ -27,7 +27,6 @@ mouth.onmouseenter = function(event){
     }
 }
 window.onmousemove = function(event){
-
     if(cookieIsDragged === false) return;
     
     target.style.top = event.clientY + "px";
@@ -47,7 +46,9 @@ window.onmousemove = function(event){
     });
 }  
 
+/* call to closure */
 let checkSnackTime = onSnackTime();
+/* forEach cookie, reference to closure */
 cookies.forEach(function(cookie){
     cookie.onclick = function(event){ 
         checkSnackTime();   
