@@ -1,5 +1,5 @@
 # Cookiemonster
-[![Het gerealiseerde eindproduct op desktop](/img/cookiemonster.png)](https://cookiemonster.css-art.nl/video/promo.mp4) 
+[![Het gerealiseerde eindproduct op desktop](https://cookiemonster.css-art.nl/img/cookiemonster.png)](https://cookiemonster.css-art.nl/video/promo.mp4) 
 <i>Klik op de video hierboven voor een demo!</i>
 
 Cookiemonster nagemaakt in HTML en CSS. Op desktop is er een interactie gerealiseerd met een koekje in Javascript en kan je Cookiemonster voeren. Dit kan door een cookie in Cookiemonster zijn mond te plaatsen en vervolgens vanuit het cookie op de mond te hoveren. Voor de lol gedaan zonder enig winstoogmerk. 
@@ -34,10 +34,10 @@ Cookiemonster is nagemaakt in HTML en CSS. Er zijn geen afbeeldingen of SVG's ge
 ## Screenshots
 
 ### Desktop Screenshot (met cookie)
-![Het gerealiseerde eindproduct op desktop: Cookiemonster in HTML en CSS met cookie](/img/cookiemonster.png "Cookiemonster")
+![Het gerealiseerde eindproduct op desktop: Cookiemonster in HTML en CSS met cookie](https://cookiemonster.css-art.nl/img/cookiemonster.png "Cookiemonster")
 
 ### Mobile Screenshot (zonder cookie)
-![Het gerealiseerde eindproduct op mobile: Cookiemonster in HTML en CSS](/img/cookiemonster_mobile.png "Cookiemonster")
+![Het gerealiseerde eindproduct op mobile: Cookiemonster in HTML en CSS](https://cookiemonster.css-art.nl/img/cookiemonster_mobile.png "Cookiemonster")
 
 ## Live demo
 https://cookiemonster.css-art.nl
