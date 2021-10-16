@@ -1,5 +1,5 @@
 # Cookiemonster
-[![Het gerealiseerde eindproduct op desktop](/img/cookiemonster.png)](//video/cookiemonster/promo.mp4) 
+[![Het gerealiseerde eindproduct op desktop](/img/cookiemonster.png)](https://cookiemonster.css-art.nl/video/promo.mp4) 
 <i>Klik op de video hierboven voor een demo!</i>
 
 Cookiemonster nagemaakt in HTML en CSS. Op desktop is er een interactie gerealiseerd met een koekje in Javascript en kan je Cookiemonster voeren. Dit kan door een cookie in Cookiemonster zijn mond te plaatsen en vervolgens vanuit het cookie op de mond te hoveren. Voor de lol gedaan zonder enig winstoogmerk. 
