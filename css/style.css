@@ -18,7 +18,7 @@
     --cookie-spot-chocolate-color: #865439;
     --cookie-spot-red-color: #DA723C;
     /* transforms */
-    --original-scale: scale(0.8);
+    --original-scale: scale(0.75);
     --mobile-scale: scale(0.3);
     --mouth-circle-rotation: rotate(10deg);
     /* positions */
@@ -44,8 +44,11 @@ main{
     min-width:100rem;
     height:100rem;
     position:relative;
-    transform:var(--original-scale);
     background:var(--cookie-monster-blue);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) var(--original-scale);
 }
 
 .cookiemonster__eye{
@@ -319,24 +322,10 @@ main{
     overflow:hidden;
 }
 
-.u-display-flex{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
 /* Media queries , 75 rem === 1200px */
 @media screen and (max-width: 75rem){
     .cookie{
         display:none;
-    }
-
-    .cookiemonster{
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%) var(--mobile-scale);
     }
 
     .cookiemonster__eye::after{
